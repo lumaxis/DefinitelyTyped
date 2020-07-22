@@ -2734,7 +2734,7 @@ export interface ServerInjectResponse extends Shot.ResponseObject {
      * the raw handler response (e.g. when not a stream or a view) before it is serialized for transmission. If not available, the value is set to payload. Useful for inspection and reuse of the
      * internal objects returned (instead of parsing the response string).
      */
-    result: object | undefined;
+    result: unknown;
     /**
      * the request object.
      */
